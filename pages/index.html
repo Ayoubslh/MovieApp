@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StreamOus</title>
+   
+    <link rel="stylesheet" href="./../styles/home.css" />
+    <script type="module" defer src="./../scripts/home.js"></script>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <h1>StreamOus</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="./AllMovies.html">Movies</a></li>
+          <li><a href="About.html">About</a></li>
+         
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="home">
+  <div class="carousel-container" id="carouselContainer">
+        <!-- <div class="carousel-wrapper" id="carousel">
+            <div class="carousel-slide" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.7)), url('./../assets/interstellarbg.jpeg');">
+                <div class="content">
+                    <div class="thumbnail">
+                        <img src="./../assets/interstellar.jpeg" alt="Interstellar Poster" />
+                    </div>
+                    <div class="text-content">
+                        <h2>Interstellar</h2>
+                        <p>A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival. Journey beyond the stars in this epic space odyssey.</p>
+                        <button class="watch-btn">Watch Now</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="carousel-slide" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.7)), url('./../assets/supermanbg.jpeg');">
+                <div class="content">
+                    <div class="thumbnail">
+                        <img src="./../assets/superman.jpeg" alt="Oppenheimer Poster" />
+                    </div>
+                    <div class="text-content">
+                      <h2>Superman</h2>
+                        <p>The Last Son of Krypton returns to protect Earth from new threats. Experience the legendary hero's greatest adventure as the Man of Steel soars again.</p>
+                     
+                        <button class="watch-btn">Watch Now</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="carousel-slide" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.7)), url('./../assets/openHbg.jpeg');">
+                <div class="content">
+                    <div class="thumbnail">
+                        <img src="./../assets/openH.jpeg" alt="Superman Poster" />
+                    </div>
+                    <div class="text-content">
+                       <h2>Oppenheimer</h2>
+                        <p>The story of American scientist J. Robert Oppenheimer and his role in the development of the atomic bomb. A gripping tale of science, politics, and moral responsibility.</p>
+                       <button class="watch-btn">Watch Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+ 
+        <button class="carousel-btn left" id="prevBtn">&#10094;</button>
+        <button class="carousel-btn right" id="nextBtn">&#10095;</button>
+
+       
+        <div class="indicators" id="indicators">
+            <div class="indicator active" data-slide="0"></div>
+            <div class="indicator" data-slide="1"></div>
+            <div class="indicator" data-slide="2"></div>
+        </div>
+
+        
+        <div class="progress-bar" id="progressBar"></div>-->
+    </div>
+
+
+    <!-- Description -->
+    <section class="desc-section text-center">
+      <h2>Welcome to StreamX</h2>
+      <p>StreamX brings you the latest and greatest in film and TV from around the world. Curated collections. Infinite genres. Pure cinema.</p>
+    </section>
+
+    <!-- Discover + Search -->
+    <div class="discover-header">
+      <h1>Discover Movies</h1>
+      
+    </div>
+
+    <!-- Movie Grid -->
+    <section>
+      <div class="movie-grid" id="movieGrid">
+        <!-- <img src="./../assets/interstellar.jpeg" />
+        <img src="./../assets/openh.jpeg" />
+        <img src="./../assets/superman.jpeg" />
+        <img src="./../assets/interstellar.jpeg" />
+        <img src="./../assets/superman.jpeg" />
+        <img src="./../assets/openh.jpeg" />
+        <img src="./../assets/superman.jpeg" />
+        <img src="./../assets/interstellar.jpeg" />
+        <img src="./../assets/openh.jpeg" />
+        <img src="./../assets/superman.jpeg" /> -->
+      </div>
+      <button class="load-btn">Load More</button>
+    </section>
+
+    <!-- Horizontal Scroll Section -->
+    <section>
+      <h3 style="margin-bottom: 1rem;">💡 Recommended For You</h3>
+      <div class="scroll-movie-row" id="recommendedMovies">
+        <!-- <img src="./../assets/interstellar.jpeg" />
+        <img src="./../assets/superman.jpeg" />
+        <img src="./../assets/openh.jpeg" />
+        <img src="./../assets/interstellar.jpeg" />
+        <img src="./../assets/superman.jpeg" />
+        <img src="./../assets/openh.jpeg" />
+        <img src="./../assets/interstellar.jpeg" />
+        <img src="./../assets/superman.jpeg" />
+        <img src="./../assets/openh.jpeg" /> -->
+      </div>
+    </section>
+     <!--Genres-->
+    <section>
+      <h3 style="margin-bottom: 1rem;">🎬 Genres</h3>
+      <div class="genre-row">
+        <div class="genre-item">
+          <h4>Action</h4>
+        </div>
+        <div class="genre-item">
+          <h4>Comedy</h4>
+        </div>
+        <div class="genre-item">
+          <h4>Drama</h4>
+        </div>
+        <div class="genre-item">
+
+          <h4>Horror</h4>
+        </div>
+        <div class="genre-item">
+  
+          <h4>Romance</h4>
+        </div>
+      </div>
+    </section>
+
+    <!--Top 5 Movies in 3 categories Grid-->
+    <section>
+      <h3 style="margin-bottom: 1rem;">🏆 Top 5 Movies</h3>
+      <div class="grid-container top-movies">
+      <div class="top-movies-grid">
+        <div class="top-movie-item">
+          <h2>Action</h2>
+          
+          <div class="movie-items" id="actionMovies">
+<!--           
+            <img src="./../assets/interstellar.jpeg" alt="Interstellar" />
+            <h4>Interstellar</h4>
+            </div>
+          
+           <div class="movie-items">
+            <img src="./../assets/interstellar.jpeg" alt="Interstellar" />
+            <h4>Interstellar</h4>
+          </div>
+           <div class="movie-items">
+            <img src="./../assets/interstellar.jpeg" alt="Interstellar" />
+            <h4>Interstellar</h4>
+          </div>
+           <div class="movie-items">
+            <img src="./../assets/interstellar.jpeg" alt="Interstellar" />
+            <h4>Interstellar</h4>-->
+          </div> 
+        
+          </div>
+        
+        <div class="top-movie-item">
+          <h2>Comedy</h2>
+          <div class="movie-items" id="comedyMovies">
+          <!-- <img src="./../assets/superman.jpeg" alt="Superman" />
+          <h4>Superman</h4>
+          </div>
+          <div class="movie-items">
+          <img src="./../assets/superman.jpeg" alt="Superman" />
+          <h4>Superman</h4>
+          </div>
+          <div class="movie-items">
+          <img src="./../assets/superman.jpeg" alt="Superman" />
+          <h4>Superman</h4>
+          </div>
+          <div class="movie-items">
+          <img src="./../assets/superman.jpeg" alt="Superman" />
+          <h4>Superman</h4>-->
+          </div> 
+        </div>
+        <div class="top-movie-item" >
+          <h2>Drama</h2>
+          <div class="movie-items" id="dramaMovies">
+          <!-- <img src="./../assets/openh.jpeg" alt="Oppenheimer" />
+          <h4>Oppenheimer</h4>
+          </div>
+            <div class="movie-items">
+          <img src="./../assets/openh.jpeg" alt="Oppenheimer" />
+          <h4>Oppenheimer</h4>
+          </div>
+            <div class="movie-items">
+          <img src="./../assets/openh.jpeg" alt="Oppenheimer" />
+          <h4>Oppenheimer</h4>
+          </div>
+            <div class="movie-items">
+          <img src="./../assets/openh.jpeg" alt="Oppenheimer" />
+          <h4>Oppenheimer</h4> -->
+          </div>
+        </div>
+       </div>
+      </div>
+    </section>
+
+    <section>
+       <!--A bottom Hero Section-->
+       <div class="hero">
+           <h2>Discover Your Next Favorite Movie</h2>
+           <p>Join our community of movie lovers and explore a world of cinematic masterpieces.</p>
+           <button class="watch-btn">Start Watching</button>
+       </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+  <p>&copy; 2023 StreamOus. All rights reserved.<span>powered with <img src="./../assets/tmdb.svg" alt="TMDB" width="150"   ></span> </p>
+  
+  </footer>
+
+
+ 
+ 
+</body>
+</html>

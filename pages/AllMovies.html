@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StreamOus - Movies</title>
+    <link rel="stylesheet" href="../styles/Allmovies.css">
+    <script src="../scripts/Allmovies.js" defer type="module"></script>
+   
+</head>
+<body>
+    <div class="bg-animation" id="bgAnimation"></div>
+    
+    <header>
+        <div class="container">
+            <h1 class="logo">StreamOus</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#" onclick="showPage('all-movies')" class="active">Movies</a></li>
+                    
+                    <li><a href="About.html">About</a></li>
+                   
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <div class="content-container">
+            <!-- All Movies Page -->
+            <div id="all-movies" class="page active">
+                <div class="page-header">
+                    <h1 class="page-title">Discover Movies</h1>
+                    <p class="page-subtitle">StreamOus brings you the latest and greatest in film from around the world. Curated collections. Infinite genres. Pure cinema.</p>
+                </div>
+                
+                <div class="discover-header">
+                    <div class="discover-links">
+                        <ul>
+                            <li><a href="#" class="active" data-type="popular">Popular</a></li>
+                            <li><a href="#" data-type="recent">Recent</a></li>
+                            <li><a href="#" data-type="random">Random</a></li>
+                        </ul>
+                    </div>
+                    <input type="text" class="search-box" placeholder="Search for movies..." />
+                </div>
+                
+                <div class="filters">
+                    <button class="filter-btn active" data-genre="all">All</button>
+                    <button class="filter-btn" data-genre="28">Action</button>
+                    <button class="filter-btn" data-genre="18">Drama</button>
+                    <button class="filter-btn" data-genre="35">Comedy</button>
+                    <button class="filter-btn" data-genre="878">Sci-Fi</button>
+                    <button class="filter-btn" data-genre="53">Thriller</button>
+                </div>
+                
+                <div class="movies-grid" id="moviesGrid"></div>
+                
+                <button class="load-btn">Load More</button>
+            </div>
+            
+            <!-- Movie Details Page -->
+            <div id="movie-details" class="page">
+                <button class="back-btn" id="backToMoviesBtn">
+                    ← Back to Movies
+                </button>
+                
+                <div class="movie-details">
+                    <div class="details-poster" id="detailsPoster"></div>
+                    <div class="details-content">
+                        <h1 id="detailsTitle">Movie Title</h1>
+                        <div class="details-meta">
+                            <div class="meta-item">
+                                <span class="meta-label">Year</span>
+                                <span class="meta-value" id="detailsYear">2023</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label">Genre</span>
+                                <span class="meta-value" id="detailsGenre">Action</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label">Duration</span>
+                                <span class="meta-value" id="detailsDuration">120 min</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label">Rating</span>
+                                <div class="rating-large" id="detailsRating">
+                                    ⭐ 8.5/10
+                                </div>
+                            </div>
+                        </div>
+                        <p class="details-description" id="detailsDescription">
+                            Movie description will be displayed here...
+                        </p>
+                        <div class="action-buttons">
+                            <button class="btn btn-primary">
+                                ▶️ Watch Now
+                            </button>
+                            <button class="btn btn-secondary">
+                                ➕ Add to List
+                            </button>
+                            <button class="btn btn-secondary">
+                                💖 Favorite
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+  <p>&copy; 2023 StreamOus. All rights reserved.<span>powered with <img src="./../assets/tmdb.svg" alt="TMDB" width="150"   ></span> </p>   </footer>
+
+</body>
+</html>
